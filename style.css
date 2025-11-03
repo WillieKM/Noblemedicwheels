@@ -1,0 +1,50 @@
+/* --- Basic Reset & Body Styling --- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark gray text */
+    background-color: #f4f4f4; /* Light gray background for a clean look */
+}
+
+/* --- Header & Navigation Bar --- */
+h1 {
+    color: #004d99; /* Professional deep blue */
+    text-align: center;
+    padding-top: 20px;
+}
+
+nav {
+    background-color: #007bff; /* Bright blue background for the nav */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #cce0ff; /* Light blue on hover */
+}
+
+/* --- Content Styling --- */
+p, ul, form, hr {
+    max-width: 800px; /* Limits width for readability */
+    margin: 20px auto; /* Centers the content */
+    padding: 0 15px;
+}
+
+h2, h3 {
+    color: #1e7e34; /* A reassuring green for subheadings */
+    max-width: 800px;
+    margin: 30px auto 15px;
+    padding: 0 15px;
+}
