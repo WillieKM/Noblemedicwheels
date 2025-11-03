@@ -1,57 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Noble Medic Wheels - Dependable & Compassionate Transportation</title>
-    <link rel="stylesheet" href="style.css"> 
-</head>
-<body>
+/* --- Basic Reset & Body Styling --- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark gray text */
+    background-color: #f4f4f4; /* Light gray background for a clean look */
+}
 
-    <header style="text-align: center; padding: 20px;">
-        <img src="logo.png" alt="Noble Medic Wheels Logo" style="max-width: 250px; height: auto;">
-    </header>
+/* --- Header & Navigation Bar --- */
+h1 {
+    color: #003366; /* Professional deep blue (Customized) */
+    text-align: center;
+    padding-top: 20px;
+}
 
-    <nav>
-        <a href="index.html">Home</a> | 
-        <a href="about.html">About Us</a> | 
-        <a href="reviews.html">Reviews</a> |
-        <a href="fleet.html">Fleet</a> | 
-        <a href="contact.html">Contact/Book</a>
-    </nav>
-    
-    <h1>Welcome to Noble Medic Wheels</h1>
-    <h2>Dependable & Compassionate Non-Emergency Transportation for [Your City/Region]</h2>
+nav {
+    background-color: #003366; /* Bright blue background for the nav (Customized) */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-    <p>
-        At Noble Medic Wheels, we understand that getting to medical appointments and essential errands safely and on time is a top priority. We provide professional, door-to-door non-emergency transportation for seniors, individuals with disabilities, and anyone needing a helping hand. Our trained and courteous drivers are dedicated to getting you to your destination with the care and respect you deserve.
-    </p>
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
 
-    <hr>
+nav a:hover {
+    color: #cce0ff; /* Light blue on hover */
+}
 
-    <h2>Why Choose Noble Medic Wheels?</h2>
+/* --- Content Styling --- */
+p, ul, form, hr, .review-card, .vehicle-card {
+    max-width: 800px; /* Limits width for readability */
+    margin: 20px auto; /* Centers the content */
+    padding: 0 15px;
+}
 
-    <ul>
-        <li>**Safety First:** Our drivers are fully trained, insured, and certified in CPR and First Aid. Our vehicles are meticulously maintained and sanitized.</li>
-        <li>**Always Punctual:** We respect your time. We pride ourselves on on-time pickups and drop-offs to ensure you never miss an important appointment.</li>
-        <li>**Compassionate Care:** We provide courteous, door-to-door service, meaning we assist you from your home to your destination's check-in.</li>
-        <li>**Easy Booking:** Scheduling a ride is simple. Call us directly or use our easy online booking form.</li>
-        <li>**Locally Owned:** We are your neighbors, and we are proud to serve our [Your City] community.</li>
-    </ul>
+h2, h3 {
+    color: #008080; /* A reassuring medical teal (Customized) */
+    max-width: 800px;
+    margin: 30px auto 15px;
+    padding: 0 15px;
+}
 
-    <hr>
+/* Styling for the Call to Action button */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #003366; /* Deep blue background (Customized) */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
-    <p style="text-align: center;">
-        <a href="contact.html" class="button">Book Your Safe Ride Today!</a>
-    </p>
+.button:hover {
+    background-color: #001a33; /* Darker blue on hover */
+}
 
-    <footer>
-        <p>&copy; 2025 Noble Medic Wheels. All rights reserved.</p>
-        <p>
-            <a href="contact.html">Contact Us</a> | 
-            <a href="about.html">Our Services</a> | 
-            <a href="#">Privacy Policy (Coming Soon)</a>
-        </p>
-    </footer>
+/* Form field styling for clean look */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
 
-</body>
-</html>
+legend {
+    font-weight: bold;
+    color: #003366; /* Deep blue */
+}
+
+/* --- Footer Styling --- */
+footer {
+    background-color: #222f3e; /* Dark, professional color (Customized) */
+    color: #ecf0f1; /* Light text for contrast */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px; /* Space between content and footer */
+    font-size: 0.9em;
+    width: 100%;
+}
+
+footer a {
+    color: #7f8c8d; /* Subtle link color */
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+footer a:hover {
+    color: #ffffff; /* White on hover */
+}
