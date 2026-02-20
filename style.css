@@ -1,102 +1,106 @@
 /* --- Basic Reset & Body Styling --- */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif; /* Modernized font stack */
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333; /* Dark gray text */
-    background-color: #f4f4f4; /* Light gray background for a clean look */
+    color: #4A4A4A; /* Brand Secondary Gray from "Non-Emergency" text */
+    background-color: #f9f9f9; 
 }
 
 /* --- Header & Navigation Bar --- */
 h1 {
-    color: #003366; /* Professional deep blue (Customized) */
+    color: #2B5C7A; /* El-Tai Trust Blue */
     text-align: center;
     padding-top: 20px;
 }
 
 nav {
-    background-color: #003366; /* Bright blue background for the nav (Customized) */
+    background-color: #2B5C7A; /* El-Tai Trust Blue */
     color: white;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 0 15px;
+    padding: 0 20px;
     font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #cce0ff; /* Light blue on hover */
+    color: #F28C38; /* El-Tai Safety Orange on hover */
 }
 
 /* --- Content Styling --- */
 p, ul, form, hr, .review-card, .vehicle-card {
-    max-width: 800px; /* Limits width for readability */
-    margin: 20px auto; /* Centers the content */
+    max-width: 800px;
+    margin: 20px auto;
     padding: 0 15px;
 }
 
 h2, h3 {
-    color: #008080; /* A reassuring medical teal (Customized) */
+    color: #2B5C7A; /* Using Brand Blue for headers instead of teal */
     max-width: 800px;
-    margin: 30px auto 15px;
+    margin: 40px auto 15px;
     padding: 0 15px;
 }
 
-/* Styling for the Call to Action button */
+/* --- Call to Action (The "Action" Color) --- */
 .button {
     display: inline-block;
-    padding: 15px 30px;
-    background-color: #003366; /* Deep blue background (Customized) */
+    padding: 15px 35px;
+    background-color: #F28C38; /* El-Tai Safety Orange */
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+    font-weight: 800; /* Extra bold for visibility */
+    border-radius: 50px; /* Rounded pill shape for a modern look */
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 4px 15px rgba(242, 140, 56, 0.4);
 }
 
 .button:hover {
-    background-color: #001a33; /* Darker blue on hover */
+    background-color: #e07b27; /* Darker orange */
+    transform: translateY(-2px); /* Slight lift effect */
 }
 
-/* Form field styling for clean look */
+/* Form field styling */
 fieldset {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
+    border: 2px solid #2B5C7A; /* Blue border to match brand */
+    padding: 25px;
+    border-radius: 8px;
     background-color: white;
 }
 
 legend {
     font-weight: bold;
-    color: #003366; /* Deep blue */
+    color: #2B5C7A;
+    padding: 0 10px;
 }
 
 /* --- Footer Styling --- */
 footer {
-    background-color: #222f3e; /* Dark, professional color (Customized) */
-    color: #ecf0f1; /* Light text for contrast */
+    background-color: #1e3f54; /* A darker shade of the brand blue */
+    color: #ffffff;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 50px; /* Space between content and footer */
-    font-size: 0.9em;
-    width: 100%;
+    padding: 40px 0;
+    margin-top: 60px;
+    font-size: 0.95em;
 }
 
 footer a {
-    color: #7f8c8d; /* Subtle link color */
+    color: #F28C38; /* Orange links in footer */
     text-decoration: none;
-    padding: 0 10px;
+    font-weight: bold;
 }
 
 footer a:hover {
-    color: #ffffff; /* White on hover */
+    text-decoration: underline;
 }
-<link rel="icon" type="image/png" href="favicon.png">
