@@ -1,33 +1,30 @@
-"use client";
-
 export default function ServicesSection() {
   return (
-    <section className="services">
-      <h2>Our Services</h2>
+    <>
+      <h2 className="section-title">Our Services</h2>
+      <p className="section-subtitle">
+        Reliable non-emergency medical transportation for ambulatory and wheelchair riders,
+        including recurring dialysis and discharge rides.
+      </p>
 
-      <div className="service-grid">
-        <div className="service-card">
+      <div className="services-grid">
+        <div className="card">
           <h3>Ambulatory Transportation</h3>
-          <p>Safe, comfortable rides for passengers who walk independently or with minimal assistance.</p>
+          <p>Comfortable rides for passengers who can walk independently or with minimal assistance.</p>
         </div>
-
-        <div className="service-card">
+        <div className="card">
           <h3>Wheelchair Transportation</h3>
           <p>ADA-compliant vehicles with ramps, securement systems, and trained drivers.</p>
         </div>
-
-        <div className="service-card">
+        <div className="card">
           <h3>Recurring Appointments</h3>
-          <p>Reliable transportation for dialysis, therapy, and long-term care routines.</p>
+          <p>Reliable dialysis and long-term care transportation with consistent scheduling.</p>
         </div>
-
-        <div className="service-card">
+        <div className="card">
           <h3>Hospital Discharge</h3>
-          <p>Timely, safe transport for patients leaving medical facilities.</p>
+          <p>Timely, safe rides home from medical facilities with door-to-door support.</p>
         </div>
       </div>
-    </section>
+    </>
   );
 }
-
-

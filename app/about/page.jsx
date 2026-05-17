@@ -1,57 +1,75 @@
+import Link from "next/link";
 export const metadata = {
-  title: "About Noble Medic Wheels | Trusted NEMT Provider",
+  title: "About Noble Medic Wheels — NEMT Provider in King & Pierce County",
   description:
-    "Learn about Noble Medic Wheels, a reliable and compassionate Non-Emergency Medical Transportation provider serving King & Pierce County.",
+    "Noble Medic Wheels is a locally owned NEMT provider in King & Pierce County committed to safe, dignified, and punctual medical transportation for patients with mobility needs.",
+  openGraph: {
+    title: "About Noble Medic Wheels — NEMT Provider",
+    description:
+      "Locally owned non-emergency medical transportation in King & Pierce County. ADA-compliant vehicles and professionally trained drivers.",
+    url: "https://www.noblemedicwheels.com/about",
+  },
 };
 
 export default function AboutPage() {
   return (
-    <section className="page container">
-      <header className="page-header">
-        <h1>About Noble Medic Wheels</h1>
-        <p className="text-muted">
-          Compassionate, reliable non-emergency medical transportation built on
-          dignity, safety, and trust.
-        </p>
-      </header>
-
-      <section>
-        <h2>Who We Are</h2>
-        <p>
-          Noble Medic Wheels is a locally operated Non-Emergency Medical
-          Transportation (NEMT) provider serving King and Pierce County. We
-          specialize in dependable, on-time transportation for patients
-          requiring ambulatory or wheelchair-accessible rides.
-        </p>
-        <p>
-          Our mission is simple: ensure every rider arrives safely, comfortably,
-          and with dignity — every time.
-        </p>
+    <main className="page-wrapper">
+      {/* HERO */}
+      <section className="page-hero">
+        <div className="container narrow">
+          <h1>About Noble Medic Wheels</h1>
+          <p>
+            Noble Medic Wheels is a locally owned Non-Emergency Medical
+            Transportation (NEMT) provider serving King & Pierce County with a
+            strong commitment to dignity, reliability, and patient-centered
+            care.
+          </p>
+        </div>
       </section>
 
-      <section>
-        <h2>What We Do</h2>
-        <ul>
-          <li>Dialysis transportation</li>
-          <li>Wheelchair-accessible medical rides</li>
-          <li>Recurring medical appointments</li>
-          <li>Hospital discharges</li>
-          <li>Broker and facility coordination</li>
-        </ul>
-      </section>
+      {/* CONTENT */}
+      <section className="container narrow">
+        {/* MISSION */}
+        <div className="content-block">
+          <h2>Our Mission</h2>
+          <p>
+            Our mission is to provide safe, dependable, and compassionate
+            transportation for individuals who rely on timely access to medical
+            care. We believe transportation should never be a barrier to health,
+            independence, or peace of mind.
+          </p>
+        </div>
 
-      <section>
-        <h2>Our Commitment</h2>
-        <p>
-          Every vehicle in our fleet is professionally maintained, sanitized,
-          and ADA-compliant. Our drivers are trained, courteous, and focused on
-          patient safety and punctuality.
-        </p>
-        <p>
-          We work closely with medical facilities, social workers, and brokers
-          to ensure seamless coordination and dependable service.
-        </p>
+        {/* WHY CHOOSE US */}
+        <div className="content-block">
+          <h2>Why Choose Noble Medic Wheels</h2>
+          <ul className="checklist">
+            <li>Wheelchair-accessible, ADA-compliant vehicles</li>
+            <li>Professional, trained, and courteous drivers</li>
+            <li>On-time pickups with clear communication</li>
+            <li>Clean and sanitized vehicles after every ride</li>
+            <li>Locally owned and operated with personal accountability</li>
+          </ul>
+        </div>
+
+        {/* CONTACT */}
+        <div className="contact-card">
+          <h3>Contact Us</h3>
+          <p>
+            <strong>Phone:</strong>{" "}
+            <a href="tel:12533749087">253-374-9087</a>
+          </p>
+          <p>
+            <strong>Email:</strong>{" "}
+            <a href="mailto:info@noblemedicwheels.com">
+              info@noblemedicwheels.com
+            </a>
+          </p>
+          <p>
+            <strong>Service Area:</strong> King & Pierce County
+          </p>
+        </div>
       </section>
-    </section>
+    </main>
   );
 }

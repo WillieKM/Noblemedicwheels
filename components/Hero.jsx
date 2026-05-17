@@ -1,16 +1,22 @@
-"use client";
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="hero">
-      <h1>Safe, Reliable, and Compassionate NEMT Services</h1>
-      <p>Serving King & Pierce County with dignity, punctuality, and care.</p>
-
-      <div className="hero-buttons">
-        <a href="/contact" className="btn-primary">Request a Ride</a>
-        <a href="/brokers" className="btn-secondary">For Brokers</a>
+      <div className="hero-inner">
+        <h1>Safe, Reliable & Compassionate Medical Transportation</h1>
+        <p>
+          Serving King &amp; Pierce County with ADA-compliant vehicles,
+          professional drivers, and on-time pickups you can count on.
+        </p>
+        <div className="hero-actions">
+          <Link href="/contact" className="btn-primary">Request a Ride</Link>
+          <Link href="/brokers" className="btn-secondary">For Brokers</Link>
+        </div>
+        <p className="hero-note">
+          ADA-Compliant &bull; Wheelchair Accessible &bull; Local &amp; Reliable
+        </p>
       </div>
     </section>
   );
 }
-
-

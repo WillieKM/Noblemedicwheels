@@ -1,50 +1,65 @@
 export const metadata = {
-  title: "NEMT Services | Noble Medic Wheels",
+  title: "Wheelchair, Dialysis & Medical Transportation Services",
   description:
-    "Reliable Non-Emergency Medical Transportation including dialysis, wheelchair, ambulatory, and hospital discharge services in King & Pierce County.",
+    "Noble Medic Wheels offers ADA-compliant wheelchair rides, recurring dialysis transport, ambulatory appointment rides, and safe hospital discharge transportation across King & Pierce County.",
+  openGraph: {
+    title: "NEMT Services — Wheelchair, Dialysis & Hospital Transport",
+    description:
+      "Dialysis transport, wheelchair-accessible rides, ambulatory appointments, and hospital discharges across King & Pierce County.",
+    url: "https://www.noblemedicwheels.com/services",
+  },
 };
 
 export default function ServicesPage() {
   return (
-    <section className="page">
-      <div className="page-header">
-        <h1>Our Services</h1>
-        <p>
-          Noble Medic Wheels provides safe, reliable, and compassionate
-          non-emergency medical transportation across King & Pierce County.
-        </p>
-      </div>
+    <main className="page-wrapper">
+      {/* PAGE HEADER */}
+      <section className="page-hero">
+        <div className="container narrow">
+          <h1>Our Services</h1>
+          <p>
+            Noble Medic Wheels provides safe, reliable, and compassionate
+            non-emergency medical transportation across King & Pierce County.
+          </p>
+        </div>
+      </section>
 
-      <div className="services-grid">
-        <Service
-          title="Dialysis Transportation"
-          description="Recurring and scheduled transportation to and from dialysis centers with punctuality and care."
-        />
+      {/* SERVICES GRID */}
+      <section className="container">
+        <div className="services-box-grid">
+          <div className="service-box">
+            <h3>Dialysis Transportation</h3>
+            <p>
+              Recurring and scheduled transportation to and from dialysis
+              centers with punctuality, consistency, and patient-focused care.
+            </p>
+          </div>
 
-        <Service
-          title="Wheelchair-Accessible Rides"
-          description="ADA-compliant vehicles equipped with secure lifts and trained assistance."
-        />
+          <div className="service-box">
+            <h3>Wheelchair-Accessible Rides</h3>
+            <p>
+              ADA-compliant vehicles equipped with secure wheelchair lifts,
+              restraint systems, and trained driver assistance.
+            </p>
+          </div>
 
-        <Service
-          title="Ambulatory Medical Appointments"
-          description="Doctor visits, follow-ups, outpatient procedures, and specialty care appointments."
-        />
+          <div className="service-box">
+            <h3>Ambulatory Medical Appointments</h3>
+            <p>
+              Transportation for doctor visits, follow-ups, outpatient
+              procedures, and specialty care appointments.
+            </p>
+          </div>
 
-        <Service
-          title="Hospital Discharges"
-          description="Coordinated, safe discharge transportation from hospitals and medical facilities."
-        />
-      </div>
-    </section>
-  );
-}
-
-function Service({ title, description }) {
-  return (
-    <div className="service-card">
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
+          <div className="service-box">
+            <h3>Hospital Discharges</h3>
+            <p>
+              Coordinated, safe discharge transportation from hospitals and
+              medical facilities with door-to-door support.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

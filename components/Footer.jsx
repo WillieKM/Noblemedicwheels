@@ -1,31 +1,55 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="site-footer">
       <div className="footer-container">
-        <div className="footer-brand">
+        {/* BRAND */}
+        <div className="footer-col">
           <h3>Noble Medic Wheels</h3>
-          <p>Safe, reliable, and compassionate NEMT services.</p>
+          <p>
+            Safe, reliable, and compassionate non-emergency medical
+            transportation serving King & Pierce County.
+          </p>
         </div>
 
-      <Link href="/services">Services</Link>
-<Link href="/fleet">Fleet</Link>
-<Link href="/brokers">For Brokers</Link>
-<Link href="/contact">Contact</Link>
-<Link href="/faq">FAQ</Link>
+        {/* LINKS */}
+        <div className="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="/services">Services</Link></li>
+            <li><Link href="/fleet">Fleet</Link></li>
+            <li><Link href="/service-area">Service Area</Link></li>
+            <li><Link href="/faq">FAQ</Link></li>
+            <li><Link href="/brokers">For Brokers</Link></li>
+            <li><Link href="/contact">Request a Ride</Link></li>
+          </ul>
+        </div>
 
-
-        <div className="footer-info">
-          <p><strong>Phone:</strong> (your number)</p>
-          <p><strong>Email:</strong> (your email)</p>
-          <p><strong>Service Area:</strong> King & Pierce County</p>
+        {/* CONTACT */}
+        <div className="footer-col">
+          <h4>Contact</h4>
+          <p>
+            <strong>Phone:</strong><br />
+            <a href="tel:12533749087">253-374-9087</a>
+          </p>
+          <p>
+            <strong>Email:</strong><br />
+            <a href="mailto:info@noblemedicwheels.com">
+              info@noblemedicwheels.com
+            </a>
+          </p>
+          <p>
+            <strong>Service Area:</strong><br />
+            King & Pierce County
+          </p>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Noble Medic Wheels. All rights reserved.</p>
+        © {new Date().getFullYear()} Noble Medic Wheels. All rights reserved.
       </div>
     </footer>
   );
 }
-
-
