@@ -1,8 +1,33 @@
+import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
-  const data = await request.json();
-  // TODO: integrate Resend, Nodemailer, or similar to email ride requests to info@noblemedicwheels.com
-  console.log("Ride request received:", data);
+  const d = await request.json();
+  const resend = new Resend(process.env.RESEND_API_KEY);
+
+  try {
+    await resend.emails.send({
+      from: "Noble Medic Wheels <noreply@noblemedicwheels.com>",
+      to: "info@noblemedicwheels.com",
+      subject: `New Ride Request — ${d.name}`,
+      html: `
+        <h2 style="color:#0b2a4a">New Ride Request</h2>
+        <table cellpadding="6" style="border-collapse:collapse;font-family:sans-serif;font-size:15px">
+          <tr><td><strong>Name</strong></td><td>${d.name}</td></tr>
+          <tr><td><strong>Phone</strong></td><td>${d.phone}</td></tr>
+          <tr><td><strong>Email</strong></td><td>${d.email || "—"}</td></tr>
+          <tr><td><strong>Pickup</strong></td><td>${d.pickup}</td></tr>
+          <tr><td><strong>Destination</strong></td><td>${d.destination}</td></tr>
+          <tr><td><strong>Ride Type</strong></td><td>${d.rideType}</td></tr>
+          <tr><td><strong>Date</strong></td><td>${d.date}</td></tr>
+          <tr><td><strong>Time</strong></td><td>${d.time}</td></tr>
+          <tr><td><strong>Notes</strong></td><td>${d.notes || "—"}</td></tr>
+        </table>
+      `,
+    });
+  } catch (err) {
+    console.error("Email send failed:", err);
+  }
+
   return NextResponse.json({ ok: true });
 }
