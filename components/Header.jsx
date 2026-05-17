@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 
 export default function Header() {
@@ -11,14 +10,9 @@ export default function Header() {
     <header className="site-header">
       <div className="header-inner">
         <Link href="/" className="logo-wrap" onClick={() => setOpen(false)}>
-          <Image
-            src="/logo.jpg"
-            alt="Noble Medic Wheels"
-            width={160}
-            height={50}
-            style={{ height: "50px", width: "auto" }}
-            priority
-          />
+          <span className="logo-text">
+            Noble<span className="logo-accent">Medic</span> Wheels
+          </span>
         </Link>
 
         <button
@@ -37,7 +31,7 @@ export default function Header() {
           <Link href="/fleet" onClick={() => setOpen(false)}>Fleet</Link>
           <Link href="/service-area" onClick={() => setOpen(false)}>Service Area</Link>
           <Link href="/faq" onClick={() => setOpen(false)}>FAQ</Link>
-          <Link href="/contact" className="btn-primary" onClick={() => setOpen(false)}>
+          <Link href="/contact" className="btn-nav-cta" onClick={() => setOpen(false)}>
             Request a Ride
           </Link>
         </nav>

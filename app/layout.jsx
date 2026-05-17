@@ -11,7 +11,7 @@ export const metadata = {
       "Noble Medic Wheels — Non-Emergency Medical Transportation in King & Pierce County",
   },
   description:
-    "Safe, ADA-compliant non-emergency medical transportation serving Seattle, Tacoma, Renton, Kent, and all of King & Pierce County. Wheelchair rides, dialysis transport, and hospital discharges.",
+    "Safe, ADA-compliant non-emergency medical transportation serving King, Pierce & Snohomish County — Seattle, Tacoma, Everett, Renton, Lynnwood, and more. Wheelchair rides, dialysis transport, and hospital discharges.",
   keywords: [
     "NEMT",
     "non-emergency medical transportation",

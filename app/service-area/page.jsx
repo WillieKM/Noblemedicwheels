@@ -1,14 +1,41 @@
 export const metadata = {
-  title: "NEMT Service Area — King & Pierce County, Washington",
+  title: "NEMT Service Area — King, Pierce & Snohomish County, WA",
   description:
-    "Noble Medic Wheels serves Seattle, Renton, Kent, Federal Way, Tacoma, Lakewood, Puyallup, and surrounding communities in King and Pierce County with non-emergency medical transportation.",
+    "Noble Medic Wheels serves Seattle, Renton, Kent, Tacoma, Everett, Marysville, Lynnwood, and communities across King, Pierce, and Snohomish County with non-emergency medical transportation.",
   openGraph: {
-    title: "Service Area — King & Pierce County NEMT",
+    title: "Service Area — King, Pierce & Snohomish County NEMT",
     description:
-      "Serving Seattle, Tacoma, Renton, Kent, Federal Way, Lakewood, Puyallup, and more across King & Pierce County.",
+      "Serving King, Pierce, and Snohomish County including Seattle, Tacoma, Everett, Renton, Lynnwood, Puyallup, and more.",
     url: "https://www.noblemedicwheels.com/service-area",
   },
 };
+
+const counties = [
+  {
+    name: "King County",
+    color: "#0ea5a4",
+    cities: [
+      "Seattle", "Renton", "Kent", "Federal Way",
+      "Burien", "Tukwila", "SeaTac", "Des Moines",
+    ],
+  },
+  {
+    name: "Pierce County",
+    color: "#0284c7",
+    cities: [
+      "Tacoma", "Lakewood", "Puyallup", "Spanaway",
+      "Parkland", "Fife", "University Place",
+    ],
+  },
+  {
+    name: "Snohomish County",
+    color: "#7c3aed",
+    cities: [
+      "Everett", "Marysville", "Lynnwood", "Bothell",
+      "Edmonds", "Mukilteo", "Mill Creek", "Snohomish",
+    ],
+  },
+];
 
 export default function ServiceAreaPage() {
   return (
@@ -18,43 +45,33 @@ export default function ServiceAreaPage() {
         <div className="container">
           <h1>Our Service Area</h1>
           <p>
-            Noble Medic Wheels proudly provides reliable, wheelchair-accessible
-            non-emergency medical transportation throughout King and Pierce
-            County.
+            Noble Medic Wheels provides ADA-compliant, wheelchair-accessible
+            non-emergency medical transportation across three counties in
+            Western Washington.
           </p>
         </div>
       </section>
 
-      {/* COVERAGE BOXES */}
+      {/* COUNTY CARDS */}
       <section className="section-light">
         <div className="container">
-          <div className="boxed-grid two-col">
-            <div className="boxed-card">
-              <h3>King County</h3>
-              <ul className="list">
-                <li>Seattle</li>
-                <li>Renton</li>
-                <li>Kent</li>
-                <li>Federal Way</li>
-                <li>Burien</li>
-                <li>Tukwila</li>
-                <li>SeaTac</li>
-                <li>Des Moines</li>
-              </ul>
-            </div>
-
-            <div className="boxed-card">
-              <h3>Pierce County</h3>
-              <ul className="list">
-                <li>Tacoma</li>
-                <li>Lakewood</li>
-                <li>Puyallup</li>
-                <li>Spanaway</li>
-                <li>Parkland</li>
-                <li>Fife</li>
-                <li>University Place</li>
-              </ul>
-            </div>
+          <div className="county-grid">
+            {counties.map((county) => (
+              <div
+                key={county.name}
+                className="county-card"
+                style={{ borderTopColor: county.color }}
+              >
+                <div className="county-badge" style={{ backgroundColor: county.color }}>
+                  {county.name}
+                </div>
+                <ul className="list" style={{ marginTop: "1rem" }}>
+                  {county.cities.map((city) => (
+                    <li key={city}>{city}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -64,11 +81,11 @@ export default function ServiceAreaPage() {
         <div className="container">
           <div className="boxed-card">
             <h2>Types of Trips We Support</h2>
-            <ul className="list">
-              <li>Dialysis appointments (one-time & recurring)</li>
-              <li>Doctor visits & follow-up care</li>
+            <ul className="list" style={{ marginTop: "1rem" }}>
+              <li>Dialysis appointments (one-time &amp; recurring)</li>
+              <li>Doctor visits &amp; follow-up care</li>
               <li>Hospital discharges</li>
-              <li>Physical therapy & rehabilitation</li>
+              <li>Physical therapy &amp; rehabilitation</li>
               <li>Wheelchair-accessible airport transportation</li>
               <li>Long-distance medical trips (case-by-case)</li>
             </ul>
@@ -79,14 +96,12 @@ export default function ServiceAreaPage() {
       {/* CTA */}
       <section className="section-cta">
         <div className="container">
-          <h2>Not Sure If You’re in Our Coverage Area?</h2>
+          <h2>Not Sure If You&apos;re in Our Coverage Area?</h2>
           <p>
-            Call us and we’ll confirm availability for your specific pickup and
-            destination.
+            Call us and we&apos;ll confirm availability for your specific pickup
+            and destination.
           </p>
-          <a href="/contact" className="btn-primary">
-            Contact Us
-          </a>
+          <a href="/contact" className="btn-primary">Contact Us</a>
         </div>
       </section>
     </main>
