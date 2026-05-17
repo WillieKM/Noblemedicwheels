@@ -1,4 +1,4 @@
-import ContactForm from "../../components/ContactForm";
+import ContactForm from "./ContactForm";
 
 export const metadata = {
   title: "Request a Non-Emergency Medical Ride",
