@@ -863,3 +863,133 @@ footer a:hover {
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
 }
+
+/* ===== CONSOLIDATED MOBILE STYLES (must stay last to win cascade) ===== */
+@media (max-width: 768px) {
+  /* Nav — overrides duplicate .nav { display: flex } above */
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-header {
+    position: relative;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #0b2a4a;
+    padding: 1rem 1.5rem 1.5rem;
+    gap: 0.75rem;
+    z-index: 100;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a {
+    font-size: 1rem;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+  }
+
+  .nav a:last-child {
+    border-bottom: none;
+    margin-top: 0.25rem;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .hero h1 {
+    font-size: 1.85rem;
+    line-height: 1.25;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-actions a {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    display: block;
+  }
+
+  /* Layout */
+  .container {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .section-light {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .section-cta {
+    padding: 2.5rem 1.25rem;
+  }
+
+  /* Page headers */
+  .page-hero {
+    padding: 2.5rem 1.25rem 1.5rem;
+  }
+
+  .page-hero h1,
+  .page-header h1 {
+    font-size: 1.75rem;
+  }
+
+  /* Grids — force single column on phones */
+  .services-grid,
+  .services-box-grid,
+  .fleet-box-grid,
+  .faq-grid,
+  .boxed-grid.two-col {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact form */
+  .contact-card {
+    padding: 1.75rem 1.25rem;
+    border-radius: 12px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  .boxed {
+    padding: 1.75rem 1.25rem;
+  }
+
+  /* Buttons */
+  .btn-primary,
+  .btn-secondary {
+    display: inline-block;
+    text-align: center;
+  }
+}
