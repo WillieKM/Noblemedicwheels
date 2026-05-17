@@ -24,7 +24,23 @@ export default function Footer() {
             <li><Link href="/faq">FAQ</Link></li>
             <li><Link href="/brokers">For Brokers</Link></li>
             <li><Link href="/reviews">Reviews</Link></li>
+            <li><Link href="/blog">Resources</Link></li>
             <li><Link href="/contact">Request a Ride</Link></li>
+          </ul>
+        </div>
+
+        {/* LOCATIONS */}
+        <div className="footer-col">
+          <h4>Cities We Serve</h4>
+          <ul>
+            <li><Link href="/locations/seattle">Seattle</Link></li>
+            <li><Link href="/locations/tacoma">Tacoma</Link></li>
+            <li><Link href="/locations/everett">Everett</Link></li>
+            <li><Link href="/locations/renton">Renton</Link></li>
+            <li><Link href="/locations/lynnwood">Lynnwood</Link></li>
+            <li><Link href="/locations/federal-way">Federal Way</Link></li>
+            <li><Link href="/locations/marysville">Marysville</Link></li>
+            <li><Link href="/locations/lakewood">Lakewood</Link></li>
           </ul>
         </div>
 

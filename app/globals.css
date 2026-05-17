@@ -1344,6 +1344,123 @@ footer a:hover {
   line-height: 1.6;
 }
 
+/* ===== LOCATION PAGES ===== */
+.location-breadcrumb {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+.location-breadcrumb a {
+  color: #0ea5a4;
+  text-decoration: none;
+}
+
+/* ===== BLOG ===== */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+  margin-top: 1rem;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 1.75rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.blog-date {
+  font-size: 0.8rem;
+  color: #0ea5a4;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.blog-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.4;
+}
+
+.blog-excerpt {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.blog-read-more {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0ea5a4;
+  margin-top: auto;
+}
+
+.blog-meta-date {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+}
+
+.blog-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #334155;
+}
+
+.blog-content h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 2rem 0 0.75rem;
+}
+
+.blog-content p {
+  margin-bottom: 1rem;
+}
+
+.blog-content ul {
+  margin: 0.75rem 0 1rem 1.25rem;
+}
+
+.blog-content li {
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+
+.blog-cta-box {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  border: 1px solid #bae6fd;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.blog-cta-box h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0b2a4a;
+  margin-bottom: 0.5rem;
+}
+
+.blog-cta-box p {
+  color: #475569;
+}
+
 /* ===== CONSOLIDATED MOBILE STYLES (must stay last to win cascade) ===== */
 @media (max-width: 768px) {
   /* Nav — overrides duplicate .nav { display: flex } above */

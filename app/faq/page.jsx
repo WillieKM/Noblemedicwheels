@@ -1,3 +1,19 @@
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Do you offer wheelchair transportation?", acceptedAnswer: { "@type": "Answer", text: "Yes. All Noble Medic Wheels vehicles are ADA-compliant and equipped with hydraulic lifts and secure wheelchair locking systems to ensure safe and comfortable transport." } },
+    { "@type": "Question", name: "Do you provide dialysis transportation?", acceptedAnswer: { "@type": "Answer", text: "Yes. We specialize in dialysis transportation, including recurring scheduled trips for patients attending regular treatment sessions." } },
+    { "@type": "Question", name: "What areas do you serve?", acceptedAnswer: { "@type": "Answer", text: "We proudly serve patients throughout King, Pierce, and Snohomish County including Seattle, Tacoma, Everett, Renton, Lynnwood, Federal Way, and more." } },
+    { "@type": "Question", name: "Are your drivers trained?", acceptedAnswer: { "@type": "Answer", text: "Yes. Our drivers are professionally trained, courteous, and experienced in assisting passengers with mobility needs while maintaining dignity and respect." } },
+    { "@type": "Question", name: "How far in advance should I book a ride?", acceptedAnswer: { "@type": "Answer", text: "We recommend booking as early as possible to guarantee availability. However, we do our best to accommodate same-day or short-notice requests when capacity allows." } },
+    { "@type": "Question", name: "Do you offer airport transportation?", acceptedAnswer: { "@type": "Answer", text: "Yes. We provide wheelchair-accessible airport transportation for medical-related travel, ensuring timely pickups and drop-offs." } },
+    { "@type": "Question", name: "Can family members ride along?", acceptedAnswer: { "@type": "Answer", text: "In many cases, one escort or family member may accompany the patient. Please let us know at the time of booking so we can plan accordingly." } },
+    { "@type": "Question", name: "Is your service covered by insurance?", acceptedAnswer: { "@type": "Answer", text: "Coverage varies depending on the insurance provider and plan. We recommend checking with your insurance company or care coordinator to confirm eligibility." } },
+    { "@type": "Question", name: "How do I request a ride?", acceptedAnswer: { "@type": "Answer", text: "You can request a ride by calling 253-374-9087 or by using the Request a Ride form on our website at noblemedicwheels.com/contact." } },
+  ],
+};
+
 export const metadata = {
   title: "Non-Emergency Medical Transportation FAQs",
   description:
@@ -13,6 +29,7 @@ export const metadata = {
 export default function FAQPage() {
   return (
     <main className="page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* PAGE HEADER */}
       <section className="page-header">
         <div className="container">
