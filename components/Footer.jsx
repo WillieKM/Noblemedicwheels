@@ -23,6 +23,7 @@ export default function Footer() {
             <li><Link href="/service-area">Service Area</Link></li>
             <li><Link href="/faq">FAQ</Link></li>
             <li><Link href="/brokers">For Brokers</Link></li>
+            <li><Link href="/reviews">Reviews</Link></li>
             <li><Link href="/contact">Request a Ride</Link></li>
           </ul>
         </div>

@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import ServicesSection from "../components/ServicesSection";
 import FleetSection from "../components/FleetSection";
+import TestimonialsSection from "../components/TestimonialsSection";
 import ContactSection from "../components/ContactSection";
 
 export const metadata = {
@@ -30,6 +31,12 @@ export default function HomePage() {
       <section className="section-light">
         <div className="container">
           <FleetSection />
+        </div>
+      </section>
+
+      <section className="section-white">
+        <div className="container">
+          <TestimonialsSection />
         </div>
       </section>
 
