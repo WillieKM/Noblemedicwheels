@@ -31,6 +31,7 @@ export default function Header() {
           <Link href="/fleet" onClick={() => setOpen(false)}>Fleet</Link>
           <Link href="/service-area" onClick={() => setOpen(false)}>Service Area</Link>
           <Link href="/faq" onClick={() => setOpen(false)}>FAQ</Link>
+          <Link href="/reviews" onClick={() => setOpen(false)}>Reviews</Link>
           <Link href="/contact" className="btn-nav-cta" onClick={() => setOpen(false)}>
             Request a Ride
           </Link>
