@@ -1318,6 +1318,46 @@ footer a:hover {
   color: #f59e0b;
 }
 
+/* ===== JS STAR PICKER ===== */
+.star-picker-js {
+  display: flex;
+  gap: 0.2rem;
+  margin-top: 0.4rem;
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  color: #d1d5db;
+  cursor: pointer;
+  padding: 0 0.05rem;
+  line-height: 1;
+  transition: color 0.15s, transform 0.1s;
+}
+
+.star-btn.active,
+.star-btn:hover {
+  color: #f59e0b;
+  transform: scale(1.1);
+}
+
+.rating-label {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 0.4rem;
+}
+
+.form-error {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  padding: 0.6rem 1rem;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+}
+
 /* ===== REVIEW SUCCESS STATE ===== */
 .review-success {
   text-align: center;

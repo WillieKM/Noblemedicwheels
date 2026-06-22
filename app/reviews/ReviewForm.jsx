@@ -5,19 +5,38 @@ import { useState } from "react";
 export default function ReviewForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+  const [rating, setRating] = useState(0);
+  const [hover, setHover] = useState(0);
 
   async function handleSubmit(e) {
     e.preventDefault();
+    if (!rating) {
+      setError("Please select a star rating before submitting.");
+      return;
+    }
+    setError("");
     setSubmitting(true);
-    const data = Object.fromEntries(new FormData(e.target));
+
+    const formData = new FormData(e.target);
+    const data = {
+      name: formData.get("name"),
+      location: formData.get("location"),
+      rating,
+      text: formData.get("text"),
+    };
+
     try {
-      await fetch("/api/review", {
+      const res = await fetch("/api/review", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-    } catch (_) {}
-    setSubmitted(true);
+      if (!res.ok) throw new Error("Server error");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please try again or call us at 253-374-9087.");
+    }
     setSubmitting(false);
   }
 
@@ -60,23 +79,27 @@ export default function ReviewForm() {
 
       <div className="rating-field">
         <label>Your Rating</label>
-        <div className="star-picker" role="radiogroup" aria-label="Star rating">
-          {[5, 4, 3, 2, 1].map((n) => (
-            <span key={n}>
-              <input
-                type="radio"
-                name="rating"
-                id={`star${n}`}
-                value={n}
-                required
-              />
-              <label htmlFor={`star${n}`} title={`${n} star${n > 1 ? "s" : ""}`}>
-                ★
-              </label>
-            </span>
+        <div className="star-picker-js" role="radiogroup" aria-label="Star rating">
+          {[1, 2, 3, 4, 5].map((n) => (
+            <button
+              key={n}
+              type="button"
+              className={`star-btn${n <= (hover || rating) ? " active" : ""}`}
+              onClick={() => setRating(n)}
+              onMouseEnter={() => setHover(n)}
+              onMouseLeave={() => setHover(0)}
+              aria-label={`${n} star${n > 1 ? "s" : ""}`}
+            >
+              ★
+            </button>
           ))}
         </div>
+        {rating > 0 && (
+          <p className="rating-label">{rating} star{rating > 1 ? "s" : ""} selected</p>
+        )}
       </div>
+
+      {error && <p className="form-error">{error}</p>}
 
       <div>
         <label htmlFor="review-text">Your Review</label>
