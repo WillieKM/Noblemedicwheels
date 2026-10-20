@@ -10,7 +10,7 @@ export default function BrokerSection() {
         <li>Full insurance coverage</li>
         <li>Driver background checks</li>
         <li>GPS-verified ride logs</li>
-        <li>Service area across King & Pierce County</li>
+        <li>Service area across King, Pierce, Snohomish & Thurston County</li>
       </ul>
 
       <a href="/brokers" className="btn-primary">Partner With Us</a>

@@ -14,8 +14,8 @@ body {
 :root {
   --brand-navy: #0b2a4a;
   --brand-blue: #2b7bbb;
-  --brand-red: #d64545;
-  --brand-teal: #0ea5a4;
+  --brand-red: #C81E2D;
+  --brand-teal: #C81E2D;
   --brand-light: #f8fafc;
 }
 
@@ -178,7 +178,7 @@ footer {
 }
 
 footer a {
-  color: #7dd3fc;
+  color: #F4A9AE;
   text-decoration: none;
 }
 
@@ -292,7 +292,7 @@ footer a:hover {
 }
 
 .footer-col a {
-  color: #7dd3fc;
+  color: #F4A9AE;
   text-decoration: none;
   font-weight: 500;
 }
@@ -377,7 +377,7 @@ footer a:hover {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #0ea5a4;
+  color: #C81E2D;
   font-weight: bold;
 }
 
@@ -395,7 +395,7 @@ footer a:hover {
 }
 
 .contact-card a {
-  color: #0284c7;
+  color: #101E3A;
   text-decoration: none;
   font-weight: 500;
 }
@@ -416,7 +416,7 @@ footer a:hover {
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
-  border-top: 4px solid #0ea5a4;
+  border-top: 4px solid #C81E2D;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -448,7 +448,7 @@ footer a:hover {
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
-  border-top: 4px solid #0ea5a4;
+  border-top: 4px solid #C81E2D;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -549,7 +549,7 @@ footer a:hover {
   content: "•";
   position: absolute;
   left: 0;
-  color: #0ea5a4;
+  color: #C81E2D;
   font-weight: bold;
 }
 
@@ -657,7 +657,7 @@ footer a:hover {
 }
 
 .callout a {
-  color: #0ea5a4;
+  color: #C81E2D;
   font-weight: 700;
   text-decoration: none;
 }
@@ -774,7 +774,7 @@ footer a:hover {
 }
 
 .callout a {
-  color: #0ea5a4;
+  color: #C81E2D;
   text-decoration: none;
 }
 
@@ -819,7 +819,7 @@ footer a:hover {
 }
 
 .callout a {
-  color: #0ea5a4;
+  color: #C81E2D;
   text-decoration: none;
 }
 
@@ -843,7 +843,7 @@ footer a:hover {
 .contact-form select:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #0ea5a4;
+  border-color: #C81E2D;
 }
 
 .form-grid {
@@ -858,7 +858,7 @@ footer a:hover {
 
 .submit-btn {
   margin-top: 2rem;
-  background: #0ea5a4;
+  background: #C81E2D;
   color: white;
   padding: 0.9rem 2rem;
   border-radius: 12px;
@@ -868,7 +868,7 @@ footer a:hover {
 }
 
 .submit-btn:hover {
-  background: #0891b2;
+  background: #A31822;
 }
 .site-header {
   background: #0b2a4a;
@@ -904,7 +904,7 @@ footer a:hover {
 }
 
 .btn-primary {
-  background: #0ea5a4;
+  background: #C81E2D;
   color: white;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
@@ -921,12 +921,12 @@ footer a:hover {
 }
 
 .logo-accent {
-  color: #0ea5a4;
+  color: #C81E2D;
 }
 
 /* ===== NAV CTA BUTTON ===== */
 .btn-nav-cta {
-  background: #0ea5a4;
+  background: #C81E2D;
   color: white !important;
   padding: 0.5rem 1.1rem;
   border-radius: 8px;
@@ -937,7 +937,7 @@ footer a:hover {
 }
 
 .btn-nav-cta:hover {
-  background: #0891b2 !important;
+  background: #A31822 !important;
   opacity: 1 !important;
 }
 
@@ -955,15 +955,15 @@ footer a:hover {
   right: -10%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(14, 165, 164, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(200, 30, 45, 0.12) 0%, transparent 70%);
   pointer-events: none;
 }
 
 .hero-badge {
   display: inline-block;
-  background: rgba(14, 165, 164, 0.2);
-  border: 1px solid rgba(14, 165, 164, 0.5);
-  color: #5eead4;
+  background: rgba(200, 30, 45, 0.2);
+  border: 1px solid rgba(200, 30, 45, 0.5);
+  color: #F4A9AE;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -974,7 +974,7 @@ footer a:hover {
 }
 
 .btn-hero-primary {
-  background: linear-gradient(135deg, #0ea5a4, #0284c7);
+  background: linear-gradient(135deg, #C81E2D, #101E3A);
   color: white;
   padding: 0.9rem 2rem;
   border-radius: 10px;
@@ -983,12 +983,12 @@ footer a:hover {
   font-size: 1.05rem;
   display: inline-block;
   transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 20px rgba(14, 165, 164, 0.4);
+  box-shadow: 0 4px 20px rgba(200, 30, 45, 0.4);
 }
 
 .btn-hero-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(14, 165, 164, 0.5);
+  box-shadow: 0 8px 28px rgba(200, 30, 45, 0.5);
 }
 
 .btn-hero-secondary {
@@ -1031,7 +1031,7 @@ footer a:hover {
 .trust-num {
   font-size: 1.6rem;
   font-weight: 800;
-  color: #5eead4;
+  color: #F4A9AE;
   line-height: 1;
 }
 
@@ -1065,7 +1065,7 @@ footer a:hover {
   display: block;
   width: 48px;
   height: 4px;
-  background: linear-gradient(90deg, #0ea5a4, #0284c7);
+  background: linear-gradient(90deg, #C81E2D, #101E3A);
   border-radius: 2px;
   margin-top: 0.5rem;
 }
@@ -1082,13 +1082,13 @@ footer a:hover {
   width: 56px;
   height: 56px;
   border-radius: 14px;
-  background: linear-gradient(135deg, rgba(14, 165, 164, 0.12), rgba(2, 132, 199, 0.12));
+  background: linear-gradient(135deg, rgba(200, 30, 45, 0.12), rgba(16, 30, 58, 0.12));
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
   margin-bottom: 1rem;
-  border: 1px solid rgba(14, 165, 164, 0.2);
+  border: 1px solid rgba(200, 30, 45, 0.2);
 }
 
 .card {
@@ -1120,7 +1120,7 @@ footer a:hover {
 
 /* ===== CTA SECTION — VIBRANT GRADIENT ===== */
 .section-cta {
-  background: linear-gradient(135deg, #0ea5a4 0%, #0284c7 60%, #1d4ed8 100%);
+  background: linear-gradient(135deg, #C81E2D 0%, #101E3A 60%, #101E3A 100%);
   color: white;
   padding: 5rem 1.5rem;
   text-align: center;
@@ -1141,7 +1141,7 @@ footer a:hover {
 
 .section-cta .btn-primary {
   background: white;
-  color: #0284c7;
+  color: #101E3A;
   font-weight: 700;
   padding: 0.85rem 2rem;
   border-radius: 10px;
@@ -1165,7 +1165,7 @@ footer a:hover {
 .county-card {
   background: white;
   border-radius: 16px;
-  border-top: 5px solid #0ea5a4;
+  border-top: 5px solid #C81E2D;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
   padding: 1.75rem;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -1266,8 +1266,8 @@ footer a:hover {
 
 .btn-outline-teal {
   display: inline-block;
-  border: 2px solid #0ea5a4;
-  color: #0ea5a4;
+  border: 2px solid #C81E2D;
+  color: #C81E2D;
   padding: 0.6rem 1.4rem;
   border-radius: 8px;
   font-weight: 700;
@@ -1277,7 +1277,7 @@ footer a:hover {
 }
 
 .btn-outline-teal:hover {
-  background: #0ea5a4;
+  background: #C81E2D;
   color: white;
 }
 
@@ -1315,8 +1315,8 @@ footer a:hover {
 .review-form input:focus,
 .review-form textarea:focus {
   outline: none;
-  border-color: #0ea5a4;
-  box-shadow: 0 0 0 3px rgba(14, 165, 164, 0.12);
+  border-color: #C81E2D;
+  box-shadow: 0 0 0 3px rgba(200, 30, 45, 0.12);
 }
 
 .review-form textarea {
@@ -1437,7 +1437,7 @@ footer a:hover {
   margin-bottom: 1rem;
 }
 .location-breadcrumb a {
-  color: #0ea5a4;
+  color: #C81E2D;
   text-decoration: none;
 }
 
@@ -1469,7 +1469,7 @@ footer a:hover {
 
 .blog-date {
   font-size: 0.8rem;
-  color: #0ea5a4;
+  color: #C81E2D;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -1492,7 +1492,7 @@ footer a:hover {
 .blog-read-more {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #0ea5a4;
+  color: #C81E2D;
   margin-top: auto;
 }
 
@@ -1529,7 +1529,7 @@ footer a:hover {
 }
 
 .blog-content a {
-  color: #0ea5a4;
+  color: #C81E2D;
   font-weight: 600;
   text-decoration: underline;
 }

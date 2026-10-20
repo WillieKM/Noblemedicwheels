@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-inner">
-        <div className="hero-badge">King, Pierce &amp; Snohomish County NEMT</div>
+        <div className="hero-badge">King, Pierce, Snohomish &amp; Thurston County NEMT</div>
         <h1>Safe, Reliable &amp; Compassionate Medical Transportation</h1>
         <p>
           ADA-compliant vehicles, professional drivers, and on-time pickups —
@@ -22,7 +22,7 @@ export default function Hero() {
           </div>
           <div className="trust-divider" />
           <div className="trust-item">
-            <span className="trust-num">3</span>
+            <span className="trust-num">4</span>
             <span className="trust-label">Counties Served</span>
           </div>
           <div className="trust-divider" />

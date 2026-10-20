@@ -27,6 +27,7 @@ const services = [
   { icon: "🚶", name: "Ambulatory Rides", desc: "Comfortable rides for passengers who walk independently or with minimal assistance." },
   { icon: "📅", name: "Dialysis Transport", desc: "Recurring, scheduled trips to dialysis centers — consistent and reliable." },
   { icon: "🏥", name: "Hospital Discharges", desc: "Safe, coordinated rides home from hospitals and medical facilities." },
+  { icon: "🛏️", name: "Gurney / Stretcher Transportation", desc: "Door-to-door transport for patients who must remain lying down." },
 ];
 
 export default function CityPage({ params }) {
@@ -89,7 +90,7 @@ export default function CityPage({ params }) {
               <p style={{ color: "#475569", marginBottom: "1.25rem" }}>
                 Call or text us directly, or fill out a ride request online. We confirm quickly.
               </p>
-              <p style={{ fontWeight: 700, fontSize: "1.3rem", color: "#0ea5a4", marginBottom: "1rem" }}>
+              <p style={{ fontWeight: 700, fontSize: "1.3rem", color: "#C81E2D", marginBottom: "1rem" }}>
                 <a href="tel:2533749087" style={{ color: "inherit", textDecoration: "none" }}>253-374-9087</a>
               </p>
               <Link href="/contact" className="btn-primary" style={{ display: "block", textAlign: "center" }}>

@@ -3,12 +3,12 @@ import Reveal from "../../components/Reveal";
 export const metadata = {
   title: "For Brokers & Care Partners | Noble Medic Wheels",
   description:
-    "Reliable, compliant non-emergency cabulance and medical transportation partner for brokers, Medicaid, and managed care in King & Pierce County.",
+    "Reliable, compliant non-emergency cabulance and medical transportation partner for brokers, Medicaid, and managed care in King, Pierce, Snohomish & Thurston County.",
   alternates: { canonical: "/brokers" },
   openGraph: {
     title: "For Brokers & Care Partners | Noble Medic Wheels",
     description:
-      "Reliable, compliant non-emergency cabulance and NEMT partner for brokers and care coordinators serving King & Pierce County.",
+      "Reliable, compliant non-emergency cabulance and NEMT partner for brokers and care coordinators serving King, Pierce, Snohomish & Thurston County.",
     url: "https://www.noblemedicwheels.com/brokers",
   },
 };
@@ -149,6 +149,26 @@ export default function BrokersPage() {
                 <li>Puyallup</li>
                 <li>Lakewood</li>
                 <li>University Place</li>
+              </ul>
+            </div>
+
+            <div className="boxed-card">
+              <h3>Snohomish County</h3>
+              <ul>
+                <li>Everett</li>
+                <li>Lynnwood</li>
+                <li>Marysville</li>
+                <li>Edmonds</li>
+              </ul>
+            </div>
+
+            <div className="boxed-card">
+              <h3>Thurston County</h3>
+              <ul>
+                <li>Olympia</li>
+                <li>Lacey</li>
+                <li>Tumwater</li>
+                <li>Yelm</li>
               </ul>
             </div>
 

@@ -10,7 +10,7 @@ export const metadata = {
   openGraph: {
     title: "Patient Reviews — Noble Medic Wheels",
     description:
-      "Real reviews from riders across King, Pierce, and Snohomish County. Share your experience too.",
+      "Real reviews from riders across King, Pierce, Snohomish, and Thurston County. Share your experience too.",
     url: "https://www.noblemedicwheels.com/reviews",
   },
 };

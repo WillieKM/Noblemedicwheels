@@ -8,7 +8,7 @@ export const metadata = {
   openGraph: {
     title: "Request a Ride — Noble Medic Wheels NEMT",
     description:
-      "Schedule wheelchair transport, dialysis rides, or medical appointments in King & Pierce County. Call 253-374-9087 or submit a request online.",
+      "Schedule wheelchair transport, dialysis rides, or medical appointments in King, Pierce, Snohomish & Thurston County. Call 253-374-9087 or submit a request online.",
     url: "https://www.noblemedicwheels.com/contact",
   },
 };

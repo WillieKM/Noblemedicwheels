@@ -15,7 +15,7 @@ export default function TestimonialsSection() {
       <h2 className="section-title">What Patients Are Saying</h2>
       <p className="section-subtitle">
         Real experiences from riders and families we serve across King, Pierce,
-        and Snohomish County.
+        Snohomish, and Thurston County.
       </p>
 
       <div className="testimonials-grid">

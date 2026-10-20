@@ -3,12 +3,12 @@ import Reveal from "../../components/Reveal";
 export const metadata = {
   title: "Our Fleet | Non-Emergency Cabulance Vehicles | Noble Medic Wheels",
   description:
-    "ADA-compliant, professionally maintained cabulance and wheelchair vans built for safe, comfortable non-emergency medical transportation in King & Pierce County.",
+    "ADA-compliant, professionally maintained cabulance and wheelchair vans built for safe, comfortable non-emergency medical transportation in King, Pierce, Snohomish & Thurston County.",
   alternates: { canonical: "/fleet" },
   openGraph: {
     title: "Our Fleet — Non-Emergency Cabulance Vehicles | Noble Medic Wheels",
     description:
-      "ADA-compliant, professionally maintained cabulance and wheelchair vans serving King & Pierce County.",
+      "ADA-compliant, professionally maintained cabulance and wheelchair vans serving King, Pierce, Snohomish & Thurston County.",
     url: "https://www.noblemedicwheels.com/fleet",
   },
 };
@@ -22,7 +22,7 @@ export default function FleetPage() {
           <h1>Our Fleet</h1>
           <p>
             Noble Medic Wheels operates a clean, safe, and ADA-compliant fleet
-            designed to meet the needs of patients across King & Pierce County.
+            designed to meet the needs of patients across King, Pierce, Snohomish & Thurston County.
           </p>
         </div>
       </section>

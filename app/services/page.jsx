@@ -3,12 +3,12 @@ import Reveal from "../../components/Reveal";
 export const metadata = {
   title: "Non-Emergency Cabulance & NEMT Services | Noble Medic Wheels",
   description:
-    "ADA-compliant non-emergency cabulance transportation: wheelchair rides, recurring dialysis transport, ambulatory appointments, and hospital discharges across King & Pierce County.",
+    "ADA-compliant non-emergency cabulance transportation: wheelchair rides, recurring dialysis transport, ambulatory appointments, and hospital discharges across King, Pierce, Snohomish & Thurston County.",
   alternates: { canonical: "/services" },
   openGraph: {
     title: "Non-Emergency Cabulance & NEMT Services — Wheelchair, Dialysis & Hospital Transport",
     description:
-      "Non-emergency cabulance transport, dialysis transport, wheelchair-accessible rides, ambulatory appointments, and hospital discharges across King & Pierce County.",
+      "Non-emergency cabulance transport, dialysis transport, wheelchair-accessible rides, ambulatory appointments, and hospital discharges across King, Pierce, Snohomish & Thurston County.",
     url: "https://www.noblemedicwheels.com/services",
   },
 };
@@ -22,8 +22,8 @@ export default function ServicesPage() {
           <h1>Our Services</h1>
           <p>
             Noble Medic Wheels provides safe, reliable, and compassionate
-            non-emergency cabulance and medical transportation across King &
-            Pierce County.
+            non-emergency cabulance and medical transportation across King,
+            Pierce, Snohomish & Thurston County.
           </p>
         </div>
       </section>
@@ -60,6 +60,14 @@ export default function ServicesPage() {
             <p>
               Coordinated, safe discharge transportation from hospitals and
               medical facilities with door-to-door support.
+            </p>
+          </div>
+
+          <div className="service-box">
+            <h3>Gurney / Stretcher Transportation</h3>
+            <p>
+              Door-to-door transport for patients who must remain lying down,
+              using gurney-equipped vehicles and trained attendants.
             </p>
           </div>
         </Reveal>

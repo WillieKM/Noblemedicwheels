@@ -13,7 +13,7 @@ export const metadata = {
       "Noble Medic Wheels | Non-Emergency Cabulance & NEMT in WA",
   },
   description:
-    "Safe, ADA-compliant non-emergency cabulance and medical transportation across King, Pierce & Snohomish County, WA. Wheelchair rides, dialysis transport, and hospital discharges.",
+    "Safe, ADA-compliant non-emergency cabulance and medical transportation across King, Pierce, Snohomish & Thurston County, WA. Wheelchair rides, dialysis transport, and hospital discharges.",
   alternates: { canonical: "/" },
   keywords: [
     "NEMT",
@@ -24,11 +24,16 @@ export const metadata = {
     "wheelchair transportation",
     "wheelchair van service",
     "dialysis transportation",
+    "gurney transportation",
+    "stretcher transportation",
     "medical transport service",
     "King County",
     "Pierce County",
+    "Snohomish County",
+    "Thurston County",
     "Seattle",
     "Tacoma",
+    "Olympia",
     "medical transport Washington",
   ],
   openGraph: {
@@ -36,14 +41,14 @@ export const metadata = {
     siteName: "Noble Medic Wheels",
     title: "Noble Medic Wheels — Non-Emergency Cabulance & Medical Transportation",
     description:
-      "Safe, ADA-compliant non-emergency cabulance and medical transport serving King & Pierce County. Wheelchair rides, dialysis transport, and hospital discharges.",
+      "Safe, ADA-compliant non-emergency cabulance and medical transport serving King, Pierce, Snohomish & Thurston County. Wheelchair rides, dialysis transport, and hospital discharges.",
     images: [{ url: "/logo.jpg", width: 400, height: 400 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Noble Medic Wheels — Non-Emergency Cabulance & NEMT in King & Pierce County",
+    title: "Noble Medic Wheels — Non-Emergency Cabulance & NEMT in King, Pierce, Snohomish & Thurston County",
     description:
-      "Safe, ADA-compliant non-emergency cabulance and medical transportation in King & Pierce County, Washington.",
+      "Safe, ADA-compliant non-emergency cabulance and medical transportation in King, Pierce, Snohomish & Thurston County, Washington.",
   },
 };
 

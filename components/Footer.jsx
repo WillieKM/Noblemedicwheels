@@ -10,7 +10,7 @@ export default function Footer() {
           <h3>Noble Medic Wheels</h3>
           <p>
             Safe, reliable, and compassionate non-emergency medical
-            transportation serving King & Pierce County.
+            transportation serving King, Pierce, Snohomish & Thurston County.
           </p>
         </div>
 
@@ -57,7 +57,7 @@ export default function Footer() {
           </p>
           <p>
             <strong>Service Area:</strong><br />
-            King & Pierce County
+            King, Pierce, Snohomish & Thurston County
           </p>
         </div>
       </div>

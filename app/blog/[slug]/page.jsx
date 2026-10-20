@@ -63,7 +63,7 @@ export default function BlogPost({ params }) {
 
           <Reveal className="blog-cta-box">
             <h3>Ready to Book?</h3>
-            <p>Noble Medic Wheels serves King, Pierce &amp; Snohomish County with ADA-compliant NEMT.</p>
+            <p>Noble Medic Wheels serves King, Pierce, Snohomish &amp; Thurston County with ADA-compliant NEMT.</p>
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", marginTop: "1rem" }}>
               <Link href="/contact" className="btn-primary">Request a Ride</Link>
               <a href="tel:2533749087" className="btn-outline-teal">Call 253-374-9087</a>
@@ -71,7 +71,7 @@ export default function BlogPost({ params }) {
           </Reveal>
 
           <div style={{ marginTop: "2rem" }}>
-            <Link href="/blog" style={{ color: "#0ea5a4", fontWeight: 600, textDecoration: "none" }}>
+            <Link href="/blog" style={{ color: "#C81E2D", fontWeight: 600, textDecoration: "none" }}>
               &larr; Back to all articles
             </Link>
           </div>

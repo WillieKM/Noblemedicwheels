@@ -4,7 +4,7 @@ import Reveal from "../../components/Reveal";
 
 export const metadata = {
   title: "NEMT & Cabulance Resources | Noble Medic Wheels",
-  description: "Guides on non-emergency cabulance and medical transportation in King, Pierce, and Snohomish County — dialysis transport, wheelchair rides, and choosing a provider.",
+  description: "Guides on non-emergency cabulance and medical transportation in King, Pierce, Snohomish, and Thurston County — dialysis transport, wheelchair rides, and choosing a provider.",
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "NEMT Resources — Noble Medic Wheels",
@@ -46,7 +46,7 @@ export default function BlogPage() {
       <section className="section-cta">
         <div className="container">
           <h2>Need a Ride?</h2>
-          <p>We serve King, Pierce &amp; Snohomish County — call or request online.</p>
+          <p>We serve King, Pierce, Snohomish &amp; Thurston County — call or request online.</p>
           <Link href="/contact" className="btn-primary">Request a Ride</Link>
         </div>
       </section>

@@ -78,6 +78,7 @@ export default function ContactForm() {
               <option value="Ambulatory">Ambulatory</option>
               <option value="Dialysis">Dialysis</option>
               <option value="Hospital Discharge">Hospital Discharge</option>
+              <option value="Gurney/Stretcher">Gurney / Stretcher</option>
               <option value="Other">Other</option>
             </select>
           </div>

@@ -3,12 +3,12 @@ import Reveal from "../../components/Reveal";
 export const metadata = {
   title: "About Noble Medic Wheels | Non-Emergency Cabulance & NEMT",
   description:
-    "Noble Medic Wheels is a locally owned non-emergency cabulance and NEMT provider in King & Pierce County, committed to safe, dignified, punctual medical transportation.",
+    "Noble Medic Wheels is a locally owned non-emergency cabulance and NEMT provider in King, Pierce, Snohomish & Thurston County, committed to safe, dignified, punctual medical transportation.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About Noble Medic Wheels — Non-Emergency Cabulance & NEMT Provider",
     description:
-      "Locally owned non-emergency cabulance and medical transportation in King & Pierce County. ADA-compliant vehicles and professionally trained drivers.",
+      "Locally owned non-emergency cabulance and medical transportation in King, Pierce, Snohomish & Thurston County. ADA-compliant vehicles and professionally trained drivers.",
     url: "https://www.noblemedicwheels.com/about",
   },
 };
@@ -22,7 +22,7 @@ export default function AboutPage() {
           <h1>About Noble Medic Wheels</h1>
           <p>
             Noble Medic Wheels is a locally owned Non-Emergency Medical
-            Transportation (NEMT) provider serving King & Pierce County with a
+            Transportation (NEMT) provider serving King, Pierce, Snohomish & Thurston County with a
             strong commitment to dignity, reliability, and patient-centered
             care.
           </p>
@@ -68,7 +68,7 @@ export default function AboutPage() {
             </a>
           </p>
           <p>
-            <strong>Service Area:</strong> King & Pierce County
+            <strong>Service Area:</strong> King, Pierce, Snohomish & Thurston County
           </p>
         </Reveal>
       </section>

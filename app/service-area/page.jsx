@@ -1,14 +1,14 @@
 import Reveal from "../../components/Reveal";
 
 export const metadata = {
-  title: "Non-Emergency Cabulance & NEMT Service Area | King, Pierce & Snohomish Co.",
+  title: "Non-Emergency Cabulance & NEMT Service Area | King, Pierce, Snohomish & Thurston Co.",
   description:
     "Noble Medic Wheels serves Seattle, Renton, Kent, Tacoma, Everett, Marysville, Lynnwood and more with non-emergency cabulance and medical transportation.",
   alternates: { canonical: "/service-area" },
   openGraph: {
-    title: "Service Area — King, Pierce & Snohomish County Non-Emergency Cabulance & NEMT",
+    title: "Service Area — King, Pierce, Snohomish & Thurston County Non-Emergency Cabulance & NEMT",
     description:
-      "Serving King, Pierce, and Snohomish County including Seattle, Tacoma, Everett, Renton, Lynnwood, Puyallup, and more.",
+      "Serving King, Pierce, Snohomish, and Thurston County including Seattle, Tacoma, Everett, Renton, Lynnwood, Puyallup, and more.",
     url: "https://www.noblemedicwheels.com/service-area",
   },
 };
@@ -16,7 +16,7 @@ export const metadata = {
 const counties = [
   {
     name: "King County",
-    color: "#0ea5a4",
+    color: "#C81E2D",
     cities: [
       "Seattle", "Renton", "Kent", "Federal Way",
       "Burien", "Tukwila", "SeaTac", "Des Moines",
@@ -24,7 +24,7 @@ const counties = [
   },
   {
     name: "Pierce County",
-    color: "#0284c7",
+    color: "#A31822",
     cities: [
       "Tacoma", "Lakewood", "Puyallup", "Spanaway",
       "Parkland", "Fife", "University Place",
@@ -32,10 +32,17 @@ const counties = [
   },
   {
     name: "Snohomish County",
-    color: "#7c3aed",
+    color: "#101E3A",
     cities: [
       "Everett", "Marysville", "Lynnwood", "Bothell",
       "Edmonds", "Mukilteo", "Mill Creek", "Snohomish",
+    ],
+  },
+  {
+    name: "Thurston County",
+    color: "#C89B46",
+    cities: [
+      "Olympia", "Lacey", "Tumwater", "Yelm",
     ],
   },
 ];

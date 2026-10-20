@@ -19,6 +19,11 @@ const services = [
     title: "Hospital Discharge",
     desc: "Timely, safe rides home from medical facilities with door-to-door support.",
   },
+  {
+    icon: "🛏️",
+    title: "Gurney / Stretcher Transportation",
+    desc: "Door-to-door transport for patients who must remain lying down, using gurney-equipped vehicles.",
+  },
 ];
 
 export default function ServicesSection() {

@@ -7,7 +7,8 @@ const faqSchema = {
     { "@type": "Question", name: "Are you a cabulance service?", acceptedAnswer: { "@type": "Answer", text: "Noble Medic Wheels provides non-emergency cabulance and medical transportation — safe, scheduled rides for dialysis, medical appointments, and hospital discharges. We are not a 911 emergency response service; for medical emergencies, please call 911." } },
     { "@type": "Question", name: "Do you offer wheelchair transportation?", acceptedAnswer: { "@type": "Answer", text: "Yes. All Noble Medic Wheels vehicles are ADA-compliant and equipped with hydraulic lifts and secure wheelchair locking systems to ensure safe and comfortable transport." } },
     { "@type": "Question", name: "Do you provide dialysis transportation?", acceptedAnswer: { "@type": "Answer", text: "Yes. We specialize in dialysis transportation, including recurring scheduled trips for patients attending regular treatment sessions." } },
-    { "@type": "Question", name: "What areas do you serve?", acceptedAnswer: { "@type": "Answer", text: "We proudly serve patients throughout King, Pierce, and Snohomish County including Seattle, Tacoma, Everett, Renton, Lynnwood, Federal Way, and more." } },
+    { "@type": "Question", name: "Do you offer gurney or stretcher transportation?", acceptedAnswer: { "@type": "Answer", text: "Yes. For patients who must remain lying down, we provide gurney-equipped vehicles and trained attendants for safe, door-to-door stretcher transport." } },
+    { "@type": "Question", name: "What areas do you serve?", acceptedAnswer: { "@type": "Answer", text: "We proudly serve patients throughout King, Pierce, Snohomish, and Thurston County including Seattle, Tacoma, Everett, Renton, Lynnwood, Federal Way, and more." } },
     { "@type": "Question", name: "Are your drivers trained?", acceptedAnswer: { "@type": "Answer", text: "Yes. Our drivers are professionally trained, courteous, and experienced in assisting passengers with mobility needs while maintaining dignity and respect." } },
     { "@type": "Question", name: "How far in advance should I book a ride?", acceptedAnswer: { "@type": "Answer", text: "We recommend booking as early as possible to guarantee availability. However, we do our best to accommodate same-day or short-notice requests when capacity allows." } },
     { "@type": "Question", name: "Do you offer airport transportation?", acceptedAnswer: { "@type": "Answer", text: "Yes. We provide wheelchair-accessible airport transportation for medical-related travel, ensuring timely pickups and drop-offs." } },
@@ -25,7 +26,7 @@ export const metadata = {
   openGraph: {
     title: "Non-Emergency Cabulance & NEMT FAQs — Noble Medic Wheels",
     description:
-      "Common questions about booking non-emergency cabulance and wheelchair rides, dialysis transport, insurance coverage, and service areas in King & Pierce County.",
+      "Common questions about booking non-emergency cabulance and wheelchair rides, dialysis transport, insurance coverage, and service areas in King, Pierce, Snohomish & Thurston County.",
     url: "https://www.noblemedicwheels.com/faq",
   },
 };
@@ -77,9 +78,18 @@ export default function FAQPage() {
           </div>
 
           <div className="faq-card">
+            <h3>Do you offer gurney or stretcher transportation?</h3>
+            <p>
+              Yes. For patients who must remain lying down, we provide
+              gurney-equipped vehicles and trained attendants for safe,
+              door-to-door stretcher transport.
+            </p>
+          </div>
+
+          <div className="faq-card">
             <h3>What areas do you serve?</h3>
             <p>
-              We proudly serve patients throughout King and Pierce County. If
+              We proudly serve patients throughout King, Pierce, Snohomish & Thurston County. If
               you are unsure whether your location is within our service area,
               please contact us.
             </p>
