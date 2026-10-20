@@ -178,7 +178,7 @@ footer {
 }
 
 footer a {
-  color: #F4A9AE;
+  color: #FF8A94;
   text-decoration: none;
 }
 
@@ -292,7 +292,7 @@ footer a:hover {
 }
 
 .footer-col a {
-  color: #F4A9AE;
+  color: #FF8A94;
   text-decoration: none;
   font-weight: 500;
 }
@@ -963,7 +963,7 @@ footer a:hover {
   display: inline-block;
   background: rgba(200, 30, 45, 0.2);
   border: 1px solid rgba(200, 30, 45, 0.5);
-  color: #F4A9AE;
+  color: #FF8A94;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -974,7 +974,7 @@ footer a:hover {
 }
 
 .btn-hero-primary {
-  background: linear-gradient(135deg, #C81E2D, #101E3A);
+  background: linear-gradient(135deg, #E63946, #C81E2D);
   color: white;
   padding: 0.9rem 2rem;
   border-radius: 10px;
@@ -1031,7 +1031,7 @@ footer a:hover {
 .trust-num {
   font-size: 1.6rem;
   font-weight: 800;
-  color: #F4A9AE;
+  color: #FF8A94;
   line-height: 1;
 }
 
@@ -1120,7 +1120,7 @@ footer a:hover {
 
 /* ===== CTA SECTION — VIBRANT GRADIENT ===== */
 .section-cta {
-  background: linear-gradient(135deg, #C81E2D 0%, #101E3A 60%, #101E3A 100%);
+  background: linear-gradient(135deg, #E63946 0%, #C81E2D 60%, #A31822 100%);
   color: white;
   padding: 5rem 1.5rem;
   text-align: center;
